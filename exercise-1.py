@@ -12,10 +12,14 @@
 #         For example, if some_char in 'abc':
 
 
-letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
-if letter in "aeiou":
-  print(f"The letter {letter} is a vowel")
-elif letter in "bcdfghjklmnpqrstvwxyz":
-  print(f"The letter {letter} is a consonant")
-else:
-  print("HEY I asked for a letter pal!")
+letter = ""
+while len(letter) != 1 or letter in "abcdefghijklmnopqrstuvwxyz" == False:
+  letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
+  if letter in "aeiou" and len(letter) == 1:
+    print(f"The letter {letter} is a vowel")
+  elif letter in "bcdfghjklmnpqrstvwxyz" and len(letter) == 1:
+    print(f"The letter {letter} is a consonant")
+  else:
+    print("HEY I asked for a single letter pal!")
+
+
