@@ -18,9 +18,9 @@ side_a = input("a:")
 side_b = input("b:")
 side_c = input("c:")
 
-if side_a == side_b == side_c:
+if int(side_a) == int(side_b) == int(side_c):
   print(f"A triangle with side of {side_a}, {side_b}, and {side_c} is an equilateral triangle")
-elif side_a != side_b != side_c != side_a:
+elif int(side_a) != int(side_b) != int(side_c) != int(side_a):
   print(f"A triangle with side of {side_a}, {side_b}, and {side_c} is a squalene triangle")
 else:
   print(f"A triangle with side of {side_a}, {side_b}, and {side_c} is an isosceles triangle")
